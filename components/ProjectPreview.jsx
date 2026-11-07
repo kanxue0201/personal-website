@@ -630,7 +630,7 @@ function ThisSiteBeat3() {
       {/* 导航栏 */}
       <rect x="36" y="76" width="568" height="36" rx="18" fill={surface} stroke={line} />
       <text x="56" y="99" fontFamily={SANS} fontSize="11" fontWeight="600" fill={ink}>
-        储贻磊
+        Elia
       </text>
       <rect x="540" y="88" width="48" height="12" rx="6" fill={line} />
 
