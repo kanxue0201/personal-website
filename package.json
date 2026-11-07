@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-chu-yilei",
+  "version": "1.0.0",
+  "private": true,
+  "description": "储贻磊的个人作品集网站 —— 用 Apple 发布会式叙事讲项目决策",
+  "scripts": {
+    "dev": "next dev -p 3210",
+    "build": "next build",
+    "start": "next start -p 3210",
+    "check:contrast": "node scripts/check-contrast.mjs",
+    "verify:ui": "node scripts/verify-ui.mjs"
+  },
+  "dependencies": {
+    "framer-motion": "11.11.17",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.49",
+    "tailwindcss": "3.4.17"
+  }
+}
