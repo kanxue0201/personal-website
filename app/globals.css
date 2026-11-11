@@ -2028,6 +2028,14 @@ button.card-project__more:hover {
   right: 20px;
 }
 
+/* 首页名字：单独放大、加粗，并用强调蓝 */
+#hero-name {
+  font-size: clamp(64px, 11vw, 152px);
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.035em;
+}
+
 /* 移动端名字再大一点，44px 在 390 宽上撑不起这一屏 */
 .t-epic {
   font-size: clamp(52px, 8.5vw, 120px);

@@ -59,7 +59,7 @@ export default function Hero() {
 
         <div className="hero__name" style={{ marginTop: 'clamp(16px, 2.4vw, 28px)' }}>
           <h1 id="hero-name" className="t-epic rise" style={{ animationDelay: '120ms' }}>
-            {profile.name}
+            {profile.heroName || profile.name}
           </h1>
           <span className="hero__latin rise" style={{ animationDelay: '220ms' }}>
             {profile.latin}
