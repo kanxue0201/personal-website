@@ -3,23 +3,7 @@
 单页叙事 + 路由化详情。首页像一场发布会（滚动钉住的项目四拍），详情走真路由，
 从卡片点开时用 `layoutId` 把它放大成整页——按 Esc 或点背景回来，列表的滚动位置还在。
 
-## 跑起来
-
-最省事：双击 **`启动.bat`** —— 会先检查 3210 有没有在跑，没有就自动构建（首次约 1 分钟）并启动，
-然后打开浏览器；要关掉服务双击 `停止.bat`。
-
-手动方式：
-
-```bash
-pnpm install
-pnpm dev        # http://127.0.0.1:3210
-pnpm build && pnpm start   # 生产模式，端口同样是 3210
-```
-
-> 注意：`pnpm dev` 会把 `.next/` 覆盖成开发产物，之后 `next start` 会报没有生产构建，
-> 需要重新 `pnpm build`（`启动.bat` 会自动判断并补构建）。
-
-Node 18+。除 Next.js / React / Framer Motion / Tailwind 之外没有别的依赖，
+除 Next.js / React / Framer Motion / Tailwind 之外没有别的依赖，
 没有 UI 组件库，没有外部字体，没有位图（项目预览是用 SVG 画的）。
 
 ## 路由
