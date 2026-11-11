@@ -51,9 +51,11 @@ export default function SiteNav() {
       <div className="shell nav__inner">
         <Link href="/" className="nav__brand" onClick={notifyNavStart}>
           {profile.name}
-          <span className="mono" aria-hidden="true">
-            {profile.latin}
-          </span>
+          {profile.latin && profile.latin.toLowerCase() !== profile.name.toLowerCase() ? (
+            <span className="mono" aria-hidden="true">
+              {profile.latin}
+            </span>
+          ) : null}
         </Link>
 
         <nav className="nav__links" aria-label="主导航">

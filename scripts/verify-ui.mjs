@@ -173,13 +173,13 @@ async function main() {
     // ---- 桌面 1440 ----
     await page.viewport(1440, 900);
     await page.goto(`${BASE}/`);
-    check('首页标题', (await page.evaluate('document.title')).includes('储贻磊'));
+    check('首页标题', (await page.evaluate('document.title')).includes('Elia'));
     await page.shot('01-home-1440-top');
 
     const heroName = await page.evaluate(
       "getComputedStyle(document.querySelector('.hero__name h1')).fontSize",
     );
-    check('Hero 字号在 clamp 上限内', parseFloat(heroName) >= 72, heroName);
+    check('Hero 标题字号足够大', parseFloat(heroName) >= 72, heroName);
 
     await page.scrollTo("document.querySelectorAll('.scene')[0].offsetTop + window.innerHeight * 1.1");
     await page.shot('02-home-scene-storyboard');

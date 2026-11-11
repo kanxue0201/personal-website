@@ -61,9 +61,12 @@ export default function Hero() {
           <h1 id="hero-name" className="t-epic rise" style={{ animationDelay: '120ms' }}>
             {profile.heroName || profile.name}
           </h1>
-          <span className="hero__latin rise" style={{ animationDelay: '220ms' }}>
-            {profile.latin}
-          </span>
+          {/* 拉丁名只在它和主标题不同的时候才显示，避免「Elia ELIA」重复 */}
+          {profile.latin && profile.latin.toLowerCase() !== (profile.heroName || profile.name).toLowerCase() ? (
+            <span className="hero__latin rise" style={{ animationDelay: '220ms' }}>
+              {profile.latin}
+            </span>
+          ) : null}
         </div>
 
         <p className="hero__line rise" style={{ animationDelay: '300ms' }}>
