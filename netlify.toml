@@ -2,5 +2,10 @@
   command = "npm run build"
   publish = ".next"
 
+# 锁文件是 pnpm 9 格式（lockfileVersion 9.0），低于 9 的 pnpm 读不了
+[build.environment]
+  NODE_VERSION = "20"
+  PNPM_VERSION = "9"
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
